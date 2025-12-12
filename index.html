@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Две ссылки по центру</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #7CFF8A, #1B8F3A);
+            background-size: 400% 400%;
+            animation: gradientMove 8s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 32px;
+            color: white;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="https://www.olx.ua/d/obyavlenie/chavunna-reshetka-na-mangal-barbekyu-reshtka-gril-lvv-IDP9mzp.html">Подарок 1</a>
+        <a href="https://prom.ua/ua/p1864181341-trimmer-professionalnyj-hair.html?adjust_campaign=share&adjust_adgroup=android&adjust_creative=product&utm_campaign=share_button&utm_medium=referral_link&utm_source=b2c_app_android">Подарок 2</a>
+        <a href="https://tekmanshop.com.ua/ru/product/2172-farbopult-elektricnij-tsg-650">Подарок 3</a>
+    </div>
+</body>
+</html>
